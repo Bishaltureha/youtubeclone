@@ -26,8 +26,8 @@ A full-stack mobile application for browsing and viewing YouTube videos, built w
 | Component       | Technology                     |
 | --------------- | ------------------------------ |
 | **Frontend**    | React Native, React Navigation |
-| **Backend**     | Node.js, Express.js            |
-| **Database**    | MongoDB, Mongoose ODM          |
+| **Backend**     | Node.js                        |
+| **Database**    | MongoDB                        |
 | **API**         | YouTube Data API v3            |
 | **Development** | Metro Bundler, Nodemon         |
 
@@ -35,9 +35,9 @@ A full-stack mobile application for browsing and viewing YouTube videos, built w
 
 ```
 youtube-mobile-app/
-├── 📱 mobile-app/                # React Native Frontend
+├── 📱 mobile-app/               # React Native Frontend
 │   ├── src/
-│   │   ├── components/           # Reusable UI components
+│   │   ├── components/          # Reusable UI components
 │   │   ├── screens/             # App screens
 │   │   ├── navigation/          # Navigation setup
 │   │   ├── services/            # API integration
@@ -46,9 +46,9 @@ youtube-mobile-app/
 │   └── package.json
 │
 ├── 🔧 server/                   # Express.js Backend
-│   ├── server.js                # Main server file
+│   ├── index.js                 # Main server file
 │   ├── package.json
-│   └── .env                     # Environment variables
+│   └── .env.example             # Environment variables
 │
 └── 📖 README.md                 # You are here!
 ```
@@ -66,7 +66,7 @@ youtube-mobile-app/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/youtube-mobile-app.git
+git clone https://github.com/Bishaltureha/youtubeclone.git
 cd youtube-mobile-app
 ```
 
@@ -120,7 +120,6 @@ Create `.env` file in server directory:
 ```env
 # Server Configuration
 PORT=3000
-NODE_ENV=development
 
 # Database
 MONGODB_URI=mongodb://localhost:27017/youtube_db
@@ -131,13 +130,12 @@ ALLOWED_ORIGINS=http://localhost:3000,http://localhost:19006
 
 ### Frontend Configuration
 
-Create `src/config/api.js`:
+Create `client/.env`:
 
 ```javascript
-export const API_CONFIG = {
-  BASE_URL: "http://localhost:3000/api",
-  YOUTUBE_API_KEY: "your-youtube-api-key-here",
-};
+API_KEY=<string>
+BASE_URL=<string>
+SERVER_URL=<string>
 ```
 
 ## 🔌 API Endpoints
@@ -184,7 +182,7 @@ cd server
 # Install dev dependencies
 npm install -D nodemon
 
-# Start with auto-reload
+# Start server
 npm run dev
 
 # Run tests (if available)
@@ -297,38 +295,6 @@ cd android && ./gradlew assembleRelease
 cd android && ./gradlew bundleRelease
 ```
 
-## 🤝 Contributing
-
-1. **Fork** the repository
-2. **Create** feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to branch (`git push origin feature/amazing-feature`)
-5. **Open** Pull Request
-
-### Development Guidelines
-
-- Follow ESLint configuration
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- React Native community for excellent documentation
-- YouTube API for video data access
-- MongoDB team for robust database solution
-- All contributors and testers
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/youtube-mobile-app/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/youtube-mobile-app/discussions)
-- **Email**: your.email@example.com
-
 ## 🔗 Links
 
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
@@ -337,7 +303,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - [YouTube API Reference](https://developers.google.com/youtube/v3/docs)
 
 ---
-
-### ⭐ Star this repository if it helped you!
-
-Made with ❤️ by [Your Name](https://github.com/yourusername)
