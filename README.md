@@ -4,10 +4,7 @@ A full-stack mobile application for browsing and viewing YouTube videos, built w
 
 <p align="center">
   <img src="ReadMeImg/1.png" alt="App Screenshot 1" width="250" />
-</p>
-
-<p align="center">
-  <img src="ReadMeImg/2.png" alt="App Screenshot 2" width="250" />
+   <img src="ReadMeImg/2.png" alt="App Screenshot 2" width="250" />
 </p>
 
 ## 🌟 Features
