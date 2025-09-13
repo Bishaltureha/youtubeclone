@@ -2,8 +2,13 @@
 
 A full-stack mobile application for browsing and viewing YouTube videos, built with React Native frontend and Express.js backend.
 
-![App Screenshot 1](ReadMeImg/1.png)  
-![App Screenshot 2](ReadMeImg/2.png)
+<p align="center">
+  <img src="ReadMeImg/1.png" alt="App Screenshot 1" width="250" />
+</p>
+
+<p align="center">
+  <img src="ReadMeImg/2.png" alt="App Screenshot 2" width="250" />
+</p>
 
 ## 🌟 Features
 
